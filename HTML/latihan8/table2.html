@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML Table 2</title>
+  </head>
+
+  <body>
+    <table border="2" cellspacing="" cellpadding="5">
+      <tr>
+        <td rowspan="3">rowspan 3</td>
+        <td colspan="2">colspan 2</td>
+      </tr>
+      <tr>
+        <!-- <td>row 2, col 1</td> -->
+        <td>row 2, col 2</td>
+        <td>row 2, col 3</td>
+      </tr>
+      <tr>
+        <!-- <td>row 3, col 1</td> -->
+        <td>row 3, col 2</td>
+        <td>row 3, col 3</td>
+      </tr>
+    </table>
+
+    <!-- Latihan -->
+    <table border="2" cellpadding="5">
+      <tr>
+        <td>1,1</td>
+        <td>1,2</td>
+        <td>1,3</td>
+        <td>1,4</td>
+      </tr>
+
+      <tr>
+        <td>2,1</td>
+        <!--
+        <td>2,2</td>
+        <td>2,3</td>
+        -->
+        <!-- WHY DOES THIS WORKS?? -->
+        <td colspan="2" rowspan="2" style="text-align: center">?</td>
+        <!-- it should create 2 col span [ ][ ]
+            and then 2 row span [ ]
+                                [ ]
+            and the result must be:
+            [ ][ ] 2 col span here
+            [ ]
+             ^ 2 row span right here
+             and why the cell num 4 filled automatically??
+            [ ][ ]
+            [ ][?]
+        -->
+        <td>2,4</td>
+      </tr>
+
+      <tr>
+        <td>3,1</td>
+        <!--
+        <td>3,2</td>
+        <td>3,3</td>
+        -->
+        <td>3,4</td>
+      </tr>
+
+      <tr>
+        <td>4,1</td>
+        <td>4,2</td>
+        <td>4,3</td>
+        <td>4,4</td>
+      </tr>
+    </table>
+  </body>
+</html>
