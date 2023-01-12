@@ -1,0 +1,9 @@
+body {
+    /*
+    background-color: skyblue;
+    background-image: url(img/chrome-2011.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+   */
+    background: lightblue url(img/chrome-2011.png) bottom center no-repeat;
+}

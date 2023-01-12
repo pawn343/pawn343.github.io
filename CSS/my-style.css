@@ -1,0 +1,18 @@
+h1 {
+    /* font name, ..., generic/default; */
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 10px;
+    font-size: 100px;
+    font-weight: normal;
+    font-variant: small-caps;
+    font-style: oblique;
+    /* use italic, if not found then -> use oblique */
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 200px;
+    /* CSS shorthand */
+    font: italic small-caps normal 30px/100px verdana, serif;
+
+}
